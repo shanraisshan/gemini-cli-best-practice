@@ -1,0 +1,45 @@
+description = "Stage one file at a time and write focused per-file commits"
+
+prompt = """
+# Per-file commit workflow
+
+Create **one commit per changed file** — never bundle. Follow the repository rule in GEMINI.md.
+
+## Step 1 — Inspect
+
+Run these shells and inspect the output:
+
+!{git status --short}
+!{git diff --stat HEAD}
+
+## Step 2 — For each changed file
+
+For every file listed in `git status`:
+
+1. Run `git diff -- <file>` and read the actual changes.
+2. Stage **only that file**: `git add <file>` (no `git add .`, no `git add -A`).
+3. Craft a commit message that focuses on WHY the change was made, not WHAT the diff shows.
+4. Commit with a HEREDOC so formatting is preserved:
+
+   git commit -m "$(cat <<'EOF'
+   <subject line>
+
+   <body describing why>
+   EOF
+   )"
+
+5. Verify the commit landed with `git log -1 --stat`.
+
+## Step 3 — Summary
+
+After all files are committed, print `git log --oneline -N` where N is the number of files committed, so the user can review the chain.
+
+## Rules
+
+- Never use `--amend` unless the user explicitly asks.
+- Never use `--no-verify` unless the user explicitly asks.
+- Never push. The user handles remote operations.
+- If a file likely contains secrets (.env, credentials.json), STOP and warn the user.
+
+User hint (optional): {{args}}
+"""

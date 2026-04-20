@@ -1,0 +1,13 @@
+description = "Show the current time in Pakistan Standard Time (PKT)"
+
+prompt = """
+Return the current wall-clock time in Pakistan Standard Time (Asia/Karachi, UTC+05:00).
+
+Use the shell to get authoritative local time — do not rely on training data:
+
+!{TZ=Asia/Karachi date '+%A, %d %B %Y — %H:%M:%S %Z'}
+
+Format the response as:
+
+> 🕰 PKT: <day>, <date> — <HH:MM:SS PKT>
+"""

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/google-gemini/gemini-cli/main/packages/cli/src/config/settings-schema.json",
+  "theme": "Default",
+  "selectedAuthType": "oauth-personal",
+  "checkpointing": true,
+  "autoAccept": false,
+  "showMemoryUsage": true,
+  "vimMode": false,
+  "ideMode": false,
+  "hideTips": false,
+  "hideBanner": false,
+  "hideWindowTitle": false,
+  "hideFooter": false,
+  "showLineNumbers": true,
+  "maxSessionTurns": 100,
+  "contextFileName": "GEMINI.md",
+  "memoryImportFormat": "tree",
+  "memoryDiscoveryMaxDirs": 200,
+  "includeDirectories": [],
+  "fileFiltering": {
+    "respectGitIgnore": true,
+    "respectGeminiIgnore": true,
+    "enableRecursiveFileSearch": true
+  },
+  "allowedTools": [
+    "ReadFile",
+    "ReadManyFiles",
+    "Glob",
+    "Grep",
+    "WebFetch(domain:*.google.com)",
+    "WebFetch(domain:*.github.com)",
+    "WebFetch(domain:ai.google.dev)",
+    "WebFetch(domain:open-meteo.com)",
+    "WebFetch(domain:api.open-meteo.com)"
+  ],
+  "coreTools": null,
+  "excludeTools": [],
+  "autoConfigureMaxOldSpaceSize": true,
+  "telemetry": {
+    "enabled": false,
+    "target": "local"
+  },
+  "usageStatisticsEnabled": false,
+  "bugCommand": {
+    "urlTemplate": "https://github.com/shanraisshan/gemini-cli-best-practice/issues/new"
+  },
+  "summarizeToolOutput": {
+    "ReadFile": { "tokenBudget": 2000 },
+    "Shell":    { "tokenBudget": 2000 }
+  },
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp"],
+      "trust": false,
+      "timeout": 60000
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"],
+      "trust": false,
+      "timeout": 60000
+    }
+  },
+  "mcpServerCommand": null,
+  "extensions": {
+    "disabled": []
+  }
+}

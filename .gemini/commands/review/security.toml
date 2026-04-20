@@ -1,0 +1,62 @@
+description = "Security review of the pending changes on the current branch"
+
+prompt = """
+# Security review — pending changes
+
+Perform a focused security review of everything that has changed on the current branch versus `main`.
+
+## Context (auto-injected)
+
+Branch state:
+!{git rev-parse --abbrev-ref HEAD}
+
+Files changed versus main:
+!{git diff --name-only main...HEAD}
+
+Full diff:
+!{git diff main...HEAD}
+
+## Review checklist
+
+Walk the diff and flag any of the following. Cite `file:line` for every finding.
+
+- **Injection**: SQL, NoSQL, command, LDAP, XPath — unsanitized input reaching an interpreter
+- **XSS**: unescaped user input rendered into HTML/JS
+- **SSRF**: outbound requests built from user input without allow-listing
+- **Path traversal**: user-controlled paths joined into filesystem operations
+- **Authn / authz**: missing checks, broken session handling, IDOR, privilege escalation
+- **Secrets**: hardcoded tokens, API keys, private keys, passwords, or `.env` values in diffs
+- **Crypto**: weak algorithms (MD5, SHA-1 for auth), weak RNG, hardcoded IVs, ECB mode, homegrown crypto
+- **Deserialization**: `pickle`, `yaml.load`, unsafe `JSON.parse` wrappers, XML external entities
+- **Dependency risk**: new dependencies — pin, audit, and prefer well-maintained packages
+- **Logging / PII**: sensitive data written to logs, stack traces exposed to users
+- **CORS / CSRF**: overly permissive CORS, missing CSRF tokens on state-changing routes
+- **Race conditions**: TOCTOU, concurrent write bugs
+
+## Output format
+
+Produce a markdown report with:
+
+### Findings (grouped by severity)
+- **Critical** — exploitable now
+- **High** — exploitable with moderate effort
+- **Medium** — defense-in-depth issues
+- **Low** — best-practice nits
+
+Each finding:
+- Title
+- Location (`file:line`)
+- Impact
+- Minimal fix
+
+### No-Finding Sections
+List the categories you reviewed and had no findings — so the reader trusts the review was thorough.
+
+## Rules
+
+- Do NOT speculate — cite the diff for every claim.
+- Do NOT modify any files during the review. Read-only.
+- If the diff is empty, say so and stop.
+
+Reviewer notes from the user (optional): {{args}}
+"""

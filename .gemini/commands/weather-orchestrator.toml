@@ -1,0 +1,50 @@
+description = "Command → Agent → Skill orchestration: fetch Dubai weather, render an SVG card"
+
+prompt = """
+# Weather Orchestrator — Command → Agent → Skill
+
+Orchestrate the weather flow in three steps: ask the user, delegate to the `@weather-agent` subagent for the fetch, then activate the `weather-svg-creator` skill to render the output.
+
+## Step 1 — Ask the user
+
+Ask the user whether they want the temperature in Celsius or Fahrenheit. Wait for the answer before proceeding.
+
+## Step 2 — Agent: fetch the temperature
+
+Delegate to the subagent explicitly:
+
+> @weather-agent Fetch the current temperature for Dubai in <celsius|fahrenheit>.
+
+The subagent runs in isolated context and returns a JSON block:
+
+```json
+{ "location": "Dubai, UAE", "temperature": <number>, "unit": "C" | "F", "timestamp": "<ISO-8601>" }
+```
+
+Parse the JSON. If the agent returns `{"error": ...}` or the block is missing, stop and report the error — do not fabricate a value.
+
+## Step 3 — Skill: render the output
+
+Activate the `weather-svg-creator` skill to render the card and summary. The Agent Skills runtime will call `activate_skill("weather-svg-creator")` once you indicate the rendering step — the user will be asked to consent, after which the skill's SKILL.md and its `assets/` directory become available.
+
+Pass the agent's JSON payload to the skill. It will write:
+- `orchestration-workflow/weather.svg`
+- `orchestration-workflow/output.md`
+
+## Step 4 — Report
+
+Reply to the user with:
+- Unit requested
+- Temperature returned by the agent
+- Path to the SVG
+- Path to the Markdown
+
+## Critical requirements
+
+1. **Command orchestrates** — all user interaction and sequencing stays here.
+2. **Agent fetches** — use `@weather-agent`. Do NOT call `web_fetch` from the orchestrator.
+3. **Skill renders** — activate `weather-svg-creator` for the rendering step. Do NOT inline the SVG template.
+4. Sequential flow: complete each step before the next.
+
+User input (if provided): {{args}}
+"""

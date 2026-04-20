@@ -1,0 +1,37 @@
+description = "Generate unit tests for a given file or symbol"
+
+prompt = """
+# Generate unit tests
+
+Target: {{args}}
+
+If the target is a file path, resolve it with `@{{args}}` below:
+
+@{{args}}
+
+## Workflow
+
+1. **Understand** the target — read the code, list each public function/class, and note its inputs, outputs, and side-effects.
+2. **Detect the test framework** by scanning the repo (pytest, vitest, jest, go test, cargo test, JUnit, etc.) via `!{ls}` and repo config files. Use what is already in place — do NOT introduce a new framework.
+3. **Co-locate or match the test convention** already used in the repo (e.g. `tests/`, `__tests__/`, `*.test.ts`, `*_test.py`).
+4. **Write the tests** covering:
+   - Happy path
+   - Boundary values (empty, zero, max, unicode, very large)
+   - Error paths (expected exceptions, invalid inputs)
+   - Idempotency / determinism where relevant
+5. **Keep tests hermetic** — no real network, no real clock, no real filesystem outside temp dirs. Mock at the system boundary only.
+6. **Run the tests** and fix anything that fails. Only report the task done after green.
+
+## Output
+
+After the run is green, print:
+- List of new/changed test files
+- Coverage delta if the repo tracks it
+- Any gotchas you hit along the way
+
+## Rules
+
+- Do NOT modify the code under test unless it's genuinely broken — then flag the bug separately.
+- Do NOT weaken assertions to make tests pass.
+- Do NOT delete existing tests.
+"""

@@ -1,0 +1,16 @@
+.DS_Store
+.env
+.env.local
+.env.*.local
+node_modules/
+*.log
+
+# Gemini CLI — personal overrides not shared with team
+.gemini/settings.local.json
+.gemini/chats/
+.gemini/checkpoints/
+
+# Claude Code — personal overrides not shared with team
+.claude/settings.local.json
+.claude/hooks/config/hooks-config.local.json
+.claude/hooks/logs/
