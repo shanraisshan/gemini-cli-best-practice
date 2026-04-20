@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="140" height="140">
+  <defs>
+    <!-- Original Gemini gradient -->
+    <linearGradient id="geminiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4"/>
+      <stop offset="50%" stop-color="#7B68EE"/>
+      <stop offset="100%" stop-color="#EA4335"/>
+    </linearGradient>
+
+    <!-- 3D enhanced Gemini gradient (lighter top) -->
+    <linearGradient id="gmBodyGrad" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#6AA3FF"/>
+      <stop offset="20%" stop-color="#4285F4"/>
+      <stop offset="50%" stop-color="#7B68EE"/>
+      <stop offset="80%" stop-color="#EA4335"/>
+      <stop offset="100%" stop-color="#B82A22"/>
+    </linearGradient>
+
+    <!-- 3D gradient for border -->
+    <linearGradient id="gmBorderGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6AA3FF"/>
+      <stop offset="25%" stop-color="#4285F4"/>
+      <stop offset="50%" stop-color="#9080F0"/>
+      <stop offset="75%" stop-color="#EA4335"/>
+      <stop offset="100%" stop-color="#C03028"/>
+    </linearGradient>
+
+    <!-- Inner panel gradient (dark with depth) -->
+    <linearGradient id="gmInnerGrad" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#282840"/>
+      <stop offset="50%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#0E0E1A"/>
+    </linearGradient>
+
+    <!-- Arm gradient (3D colorful) -->
+    <linearGradient id="gmArmL" x1="0" y1="0" x2="1" y2="0.5">
+      <stop offset="0%" stop-color="#3570D0"/>
+      <stop offset="50%" stop-color="#5A78E0"/>
+      <stop offset="100%" stop-color="#7B68EE"/>
+    </linearGradient>
+
+    <linearGradient id="gmArmR" x1="0" y1="0" x2="1" y2="0.5">
+      <stop offset="0%" stop-color="#D04535"/>
+      <stop offset="50%" stop-color="#EA4335"/>
+      <stop offset="100%" stop-color="#C03028"/>
+    </linearGradient>
+
+    <!-- Leg gradient -->
+    <linearGradient id="gmLegL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4285F4"/>
+      <stop offset="50%" stop-color="#6A58D0"/>
+      <stop offset="100%" stop-color="#5040A0"/>
+    </linearGradient>
+
+    <linearGradient id="gmLegR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B84030"/>
+      <stop offset="50%" stop-color="#EA4335"/>
+      <stop offset="100%" stop-color="#D03828"/>
+    </linearGradient>
+
+    <!-- Eye white gradient (glossy) -->
+    <radialGradient id="gmEyeGrad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="60%" stop-color="#F0F0F0"/>
+      <stop offset="100%" stop-color="#D8D8D8"/>
+    </radialGradient>
+
+    <!-- Chevron 3D gradient -->
+    <linearGradient id="gmChevronGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6AA3FF"/>
+      <stop offset="30%" stop-color="#4285F4"/>
+      <stop offset="60%" stop-color="#9080F0"/>
+      <stop offset="100%" stop-color="#EA4335"/>
+    </linearGradient>
+
+    <!-- Ground shadow radial -->
+    <radialGradient id="gmShadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#000" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="gmDropShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="1.8" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+
+    <!-- Inner depth for body -->
+    <filter id="gmInnerDepth" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="blur"/>
+      <feOffset dx="0" dy="1.5" result="off"/>
+      <feFlood flood-color="#000" flood-opacity="0.2" result="color"/>
+      <feComposite in="color" in2="off" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Chevron glow -->
+    <filter id="gmChevronGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .gemini-body {
+      animation: frightened-bounce 0.3s ease-in-out infinite, tremble 0.08s linear infinite, tilt-sway 0.6s ease-in-out infinite;
+      transform-origin: 42px 70px;
+      animation-delay: 0.1s;
+    }
+    .left-leg {
+      animation: panic-run-left 0.25s ease-in-out infinite;
+      transform-origin: 30px 72px;
+      animation-delay: 0.1s;
+    }
+    .right-leg {
+      animation: panic-run-right 0.25s ease-in-out infinite;
+      transform-origin: 54px 72px;
+      animation-delay: 0.1s;
+    }
+    .left-arm {
+      animation: flail-left 0.2s ease-in-out infinite;
+      transform-origin: 18px 45px;
+      animation-delay: 0.1s;
+    }
+    .right-arm {
+      animation: flail-right 0.2s ease-in-out infinite;
+      transform-origin: 66px 45px;
+      animation-delay: 0.1s;
+    }
+    @keyframes frightened-bounce {
+      0%, 100% { transform: translateY(0) translateX(0); }
+      25% { transform: translateY(-6px) translateX(2px); }
+      50% { transform: translateY(-3px) translateX(-1px); }
+      75% { transform: translateY(-8px) translateX(1px); }
+    }
+    @keyframes tremble {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-1px); }
+      75% { transform: translateX(1px); }
+    }
+    @keyframes tilt-sway {
+      0%, 100% { transform: rotate(8deg); }
+      30% { transform: rotate(12deg); }
+      60% { transform: rotate(5deg); }
+    }
+    @keyframes panic-run-left {
+      0%, 100% { transform: rotate(-35deg); }
+      50% { transform: rotate(35deg); }
+    }
+    @keyframes panic-run-right {
+      0%, 100% { transform: rotate(35deg); }
+      50% { transform: rotate(-35deg); }
+    }
+    @keyframes flail-left {
+      0%, 100% { transform: rotate(30deg) translateY(-2px); }
+      50% { transform: rotate(-25deg) translateY(2px); }
+    }
+    @keyframes flail-right {
+      0%, 100% { transform: rotate(-30deg) translateY(2px); }
+      50% { transform: rotate(25deg) translateY(-2px); }
+    }
+    .eye {
+      animation: nervous-blink 0.5s ease-in-out infinite;
+      animation-delay: 0.15s;
+    }
+    @keyframes nervous-blink {
+      0%, 30%, 40%, 70%, 80%, 100% { transform: scaleY(1); }
+      35%, 75% { transform: scaleY(0.1); }
+    }
+    .shadow {
+      animation: shadow-pulse 0.3s ease-in-out infinite;
+      animation-delay: 0.1s;
+    }
+    @keyframes shadow-pulse {
+      0%, 100% { transform: scale(1, 1); opacity: 0.25; }
+      50% { transform: scale(0.9, 0.8); opacity: 0.15; }
+    }
+  </style>
+
+  <!-- Shadow -->
+  <ellipse class="shadow" cx="42" cy="92" rx="18" ry="4" fill="url(#gmShadowGrad)"/>
+
+  <!-- Gemini Character Group -->
+  <g class="gemini-body" filter="url(#gmDropShadow)">
+    <!-- Gemini CLI Icon - Rounded rectangle with gradient border -->
+    <g transform="translate(10, 8)" filter="url(#gmInnerDepth)">
+      <!-- Outer gradient border (3D enhanced) -->
+      <rect x="0" y="0" width="64" height="64" rx="14" fill="url(#gmBorderGrad)"/>
+      <!-- Border highlight (top edge shine) -->
+      <rect x="2" y="1" width="40" height="3" rx="2" fill="#8AB8FF" opacity="0.3"/>
+
+      <!-- Inner dark background (3D depth) -->
+      <rect x="5" y="5" width="54" height="54" rx="10" fill="url(#gmInnerGrad)"/>
+      <!-- Inner panel top highlight -->
+      <rect x="8" y="7" width="28" height="4" rx="2" fill="#3A3A58" opacity="0.4"/>
+
+      <!-- Chevron ">" symbol - thick terminal style (3D glow) -->
+      <g transform="translate(14, 16)" filter="url(#gmChevronGlow)">
+        <!-- Top arm of chevron -->
+        <polygon points="0,14 20,0 24,5 10,16" fill="url(#gmChevronGrad)"/>
+        <!-- Bottom arm of chevron -->
+        <polygon points="0,18 10,16 24,27 20,32" fill="url(#gmChevronGrad)"/>
+        <!-- Chevron highlight -->
+        <polygon points="1,14.5 18,2 20,4 9,14" fill="#9CC0FF" opacity="0.25"/>
+      </g>
+    </g>
+
+    <!-- Eyes positioned on the icon - looking back scared -->
+    <rect class="eye" x="24" y="28" width="8" height="12" rx="2" fill="url(#gmEyeGrad)" style="transform-origin: 28px 34px;"/>
+    <!-- Left eye highlights -->
+    <rect x="25" y="29" width="2.5" height="2.5" fill="#fff" opacity="0.8" rx="0.5"/>
+    <rect x="29" y="35" width="1.2" height="1.2" fill="#fff" opacity="0.35" rx="0.3"/>
+
+    <rect class="eye" x="44" y="28" width="8" height="12" rx="2" fill="url(#gmEyeGrad)" style="transform-origin: 48px 34px;"/>
+    <!-- Right eye highlights -->
+    <rect x="45" y="29" width="2.5" height="2.5" fill="#fff" opacity="0.8" rx="0.5"/>
+    <rect x="49" y="35" width="1.2" height="1.2" fill="#fff" opacity="0.35" rx="0.3"/>
+  </g>
+
+  <!-- Left arm -->
+  <rect class="left-arm" x="6" y="42" width="12" height="6" rx="2" fill="url(#gmArmL)"/>
+  <rect class="left-arm" x="7" y="43" width="4" height="2" fill="#8AB8FF" opacity="0.3" rx="0.5"/>
+
+  <!-- Right arm -->
+  <rect class="right-arm" x="66" y="42" width="12" height="6" rx="2" fill="url(#gmArmR)"/>
+  <rect class="right-arm" x="67" y="43" width="4" height="2" fill="#F08070" opacity="0.25" rx="0.5"/>
+
+  <!-- Left leg -->
+  <rect class="left-leg" x="26" y="72" width="8" height="14" rx="2" fill="url(#gmLegL)"/>
+  <rect class="left-leg" x="27" y="73" width="3" height="7" fill="#6AA3FF" opacity="0.3" rx="0.5"/>
+
+  <!-- Right leg -->
+  <rect class="right-leg" x="50" y="72" width="8" height="14" rx="2" fill="url(#gmLegR)"/>
+  <rect class="right-leg" x="51" y="73" width="3" height="7" fill="#F08070" opacity="0.25" rx="0.5"/>
+</svg>
