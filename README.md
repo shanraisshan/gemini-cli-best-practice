@@ -3,7 +3,7 @@ from vibe coding to agentic engineering — practice makes gemini perfect
 
 ![updated with Gemini CLI](https://img.shields.io/badge/updated_with_Gemini_CLI-v0.39.1%20(Apr%2024%2C%202026)-white?style=flat&labelColor=555) <a href="https://github.com/shanraisshan/gemini-cli-best-practice/stargazers"><img src="https://img.shields.io/github/stars/shanraisshan/gemini-cli-best-practice?style=flat&label=%E2%98%85&labelColor=555&color=white" alt="GitHub Stars"></a><br>
 
-[![Best Practice](!/tags/best-practice.svg)](best-practice/) [![Implemented](!/tags/implemented.svg)](implementation/) [![Orchestration Workflow](!/tags/orchestration-workflow.svg)](orchestration-workflow/orchestration-workflow.md) [![Gemini](!/tags/gemini.svg)](https://github.com/google-gemini/gemini-cli) [![Taylor](!/tags/taylor-mullen.svg)](https://x.com/mrtaylorio) [![Community](!/tags/community.svg)](#-tips-and-tricks-29) ![Click on these badges below to see the actual sources](!/tags/click-badges.svg)<br>
+[![Best Practice](!/tags/best-practice.svg)](best-practice/) [![Implemented](!/tags/implemented.svg)](implementation/) [![Orchestration Workflow](!/tags/orchestration-workflow.svg)](orchestration-workflow/orchestration-workflow.md) [![Gemini](!/tags/gemini.svg)](https://github.com/google-gemini/gemini-cli) [![Taylor](!/tags/taylor-mullen.svg)](https://x.com/ntaylormullen) [![Community](!/tags/community.svg)](#-tips-and-tricks-29) ![Click on these badges below to see the actual sources](!/tags/click-badges.svg)<br>
 <img src="!/tags/a.svg" height="14"> = Agents · <img src="!/tags/s.svg" height="14"> = Skills · <img src="!/tags/c.svg" height="14"> = Commands
 
 <p align="center">
@@ -94,7 +94,7 @@ Counts reflect the full multi-agent system shipped by each repo; the Gemini CLI 
 
 ### Others
 
-- **Taylor Mullen** (Creator of Gemini CLI) Workflow — [![Taylor](!/tags/taylor-mullen.svg)](https://x.com/mrtaylorio) · [GitHub](https://github.com/NTaylorMullen) · [X](https://x.com/mrtaylorio) · [Gemini CLI repo](https://github.com/google-gemini/gemini-cli)
+- **Taylor Mullen** (Creator of Gemini CLI) Workflow — [![Taylor](!/tags/taylor-mullen.svg)](https://x.com/ntaylormullen) · [GitHub](https://github.com/NTaylorMullen) · [X](https://x.com/ntaylormullen) · [Gemini CLI repo](https://github.com/google-gemini/gemini-cli)
 - **Addy Osmani** (Google DevRel) Workflow — 29 Tips [![Addy](!/tags/addyosmani.svg)](tips/gemini-addyosmani-29-tips.md) · [source](https://github.com/addyosmani/gemini-cli-tips) · [X](https://x.com/addyosmani)
 
 <p align="center">
@@ -216,6 +216,18 @@ Counts reflect the full multi-agent system shipped by each repo; the Gemini CLI 
 
 <p align="center">
   <img src="!/gemini-jumping.svg" alt="section divider" width="60" height="72">
+</p>
+
+## 🔔 SUBSCRIBE
+
+| Source | Name | Badge |
+|--------|------|-------|
+| ![Reddit](https://img.shields.io/badge/-FF4500?style=flat&logo=reddit&logoColor=white) | [r/GoogleGeminiAI](https://www.reddit.com/r/GoogleGeminiAI/), [r/GeminiAI](https://www.reddit.com/r/GeminiAI/), [r/Bard](https://www.reddit.com/r/Bard/), [r/google](https://www.reddit.com/r/google/), [r/googlecloud](https://www.reddit.com/r/googlecloud/) | ![Gemini Team](!/tags/gemini.svg) |
+| ![X](https://img.shields.io/badge/-000?style=flat&logo=x&logoColor=white) | [Google AI](https://x.com/GoogleAI), [Google DeepMind](https://x.com/GoogleDeepMind), [Gemini App](https://x.com/GeminiApp), [Taylor Mullen](https://x.com/ntaylormullen) (Creator of Gemini CLI), [Allen Hutchison](https://x.com/allen_hutchison) (Gemini CLI Lead), [Jack Wotherspoon](https://x.com/JackWoth98) (Gemini CLI DevRel), [Addy Osmani](https://x.com/addyosmani) (Google DevRel), [Paige Bailey](https://x.com/DynamicWebPaige) (AI DevX Lead), [Logan Kilpatrick](https://x.com/OfficialLoganK) (AI Studio Lead), [Sundar Pichai](https://x.com/sundarpichai), [Demis Hassabis](https://x.com/demishassabis), [Jeff Dean](https://x.com/JeffDean), [Oriol Vinyals](https://x.com/OriolVinyalsML), [Koray Kavukcuoglu](https://x.com/koraykv), [Noam Shazeer](https://x.com/NoamShazeer), [Quoc Le](https://x.com/quocleix), [Jack Rae](https://x.com/jack_w_rae), [Denny Zhou](https://x.com/denny_zhou), [Ankur Bapna](https://x.com/ankurbpn), [Josh Woodward](https://x.com/joshwoodward), [Tulsee Doshi](https://x.com/tulseedoshi) | ![Gemini Team](!/tags/gemini.svg) |
+| ![YouTube](https://img.shields.io/badge/-F00?style=flat&logo=youtube&logoColor=white) | [Google DeepMind](https://www.youtube.com/@GoogleDeepMind), [Google for Developers](https://www.youtube.com/@GoogleDevelopers), [Google AI Developers](https://www.youtube.com/@googleaidevs), [Google Cloud Tech](https://www.youtube.com/@GoogleCloudTech) | ![Gemini Team](!/tags/gemini.svg) |
+
+<p align="center">
+  <img src="!/gemini-mascot.svg" alt="section divider" width="60" height="50">
 </p>
 
 ## Other Repos
