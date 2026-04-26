@@ -1,7 +1,7 @@
 # gemini-cli-best-practice
 from vibe coding to agentic engineering — practice makes gemini perfect
 
-![updated with Gemini CLI](https://img.shields.io/badge/updated_with_Gemini_CLI-v0.38.2%20(Apr%2020%2C%202026)-white?style=flat&labelColor=555) <a href="https://github.com/shanraisshan/gemini-cli-best-practice/stargazers"><img src="https://img.shields.io/github/stars/shanraisshan/gemini-cli-best-practice?style=flat&label=%E2%98%85&labelColor=555&color=white" alt="GitHub Stars"></a><br>
+![updated with Gemini CLI](https://img.shields.io/badge/updated_with_Gemini_CLI-v0.39.1%20(Apr%2024%2C%202026)-white?style=flat&labelColor=555) <a href="https://github.com/shanraisshan/gemini-cli-best-practice/stargazers"><img src="https://img.shields.io/github/stars/shanraisshan/gemini-cli-best-practice?style=flat&label=%E2%98%85&labelColor=555&color=white" alt="GitHub Stars"></a><br>
 
 [![Best Practice](!/tags/best-practice.svg)](best-practice/) [![Implemented](!/tags/implemented.svg)](implementation/) [![Orchestration Workflow](!/tags/orchestration-workflow.svg)](orchestration-workflow/orchestration-workflow.md) [![Gemini](!/tags/gemini.svg)](https://github.com/google-gemini/gemini-cli) [![Taylor](!/tags/taylor-mullen.svg)](https://x.com/mrtaylorio) [![Community](!/tags/community.svg)](#-tips-and-tricks-29) ![Click on these badges below to see the actual sources](!/tags/click-badges.svg)<br>
 <img src="!/tags/a.svg" height="14"> = Agents · <img src="!/tags/s.svg" height="14"> = Skills · <img src="!/tags/c.svg" height="14"> = Commands
@@ -220,11 +220,30 @@ Counts reflect the full multi-agent system shipped by each repo; the Gemini CLI 
 
 ## Other Repos
 
-<a href="https://github.com/shanraisshan/claude-code-best-practice"><img src="!/claude-jumping.svg" alt="Claude Code Best Practice" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/claude-code-best-practice"><strong>claude-code-best-practice</strong></a> · <a href="https://github.com/shanraisshan/claude-code-hooks"><img src="!/claude-speaking.svg" alt="Claude Code Hooks" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/claude-code-hooks"><strong>claude-code-hooks</strong></a> · <a href="https://github.com/shanraisshan/codex-cli-best-practice"><img src="!/codex-jumping.svg" alt="Codex CLI Best Practice" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/codex-cli-best-practice"><strong>codex-cli-best-practice</strong></a> · <a href="https://github.com/shanraisshan/codex-cli-hooks"><img src="!/codex-speaking.svg" alt="Codex CLI Hooks" width="40" height="40" align="center"></a> <a href="https://github.com/shanraisshan/codex-cli-hooks"><strong>codex-cli-hooks</strong></a>
-
-<p align="center">
-  <img src="!/gemini-jumping.svg" alt="section divider" width="60" height="72">
-</p>
+<table>
+<tr>
+<td align="center" width="140">
+  <a href="https://github.com/shanraisshan/claude-code-best-practice"><img src="!/claude-jumping.svg" alt="Claude Code Best Practice" width="64" height="64"></a><br>
+  <a href="https://github.com/shanraisshan/claude-code-best-practice"><strong>Claude Code<br>Best Practice</strong></a>
+</td>
+<td align="center" width="140">
+  <a href="https://github.com/shanraisshan/claude-code-hooks"><img src="!/claude-speaking.svg" alt="Claude Code Hooks" width="64" height="64"></a><br>
+  <a href="https://github.com/shanraisshan/claude-code-hooks"><strong>Claude Code<br>Hooks</strong></a>
+</td>
+<td align="center" width="140">
+  <a href="https://github.com/shanraisshan/codex-cli-best-practice"><img src="!/codex-jumping.svg" alt="Codex CLI Best Practice" width="64" height="64"></a><br>
+  <a href="https://github.com/shanraisshan/codex-cli-best-practice"><strong>Codex CLI<br>Best Practice</strong></a>
+</td>
+<td align="center" width="140">
+  <a href="https://github.com/shanraisshan/codex-cli-hooks"><img src="!/codex-speaking.svg" alt="Codex CLI Hooks" width="64" height="64"></a><br>
+  <a href="https://github.com/shanraisshan/codex-cli-hooks"><strong>Codex CLI<br>Hooks</strong></a>
+</td>
+<td align="center" width="140">
+  <a href="https://github.com/shanraisshan/gemini-cli-hooks"><img src="!/gemini-mascot.svg" alt="Gemini CLI Hooks" width="64" height="64"></a><br>
+  <a href="https://github.com/shanraisshan/gemini-cli-hooks"><strong>Gemini CLI<br>Hooks</strong></a>
+</td>
+</tr>
+</table>
 
 ## <img src="!/tags/sponsor-heart.svg" width="22" height="22" align="center"> Sponsor My Work
 
