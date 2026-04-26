@@ -223,6 +223,10 @@ Counts reflect the full multi-agent system shipped by each repo; the Gemini CLI 
 <table>
 <tr>
 <td align="center" width="140">
+  <a href="https://github.com/shanraisshan/gemini-cli-hooks"><img src="!/gemini-mascot.svg" alt="Gemini CLI Hooks" width="64" height="64"></a><br>
+  <a href="https://github.com/shanraisshan/gemini-cli-hooks"><strong>Gemini CLI<br>Hooks</strong></a>
+</td>
+<td align="center" width="140">
   <a href="https://github.com/shanraisshan/claude-code-best-practice"><img src="!/claude-jumping.svg" alt="Claude Code Best Practice" width="64" height="64"></a><br>
   <a href="https://github.com/shanraisshan/claude-code-best-practice"><strong>Claude Code<br>Best Practice</strong></a>
 </td>
@@ -238,10 +242,6 @@ Counts reflect the full multi-agent system shipped by each repo; the Gemini CLI 
   <a href="https://github.com/shanraisshan/codex-cli-hooks"><img src="!/codex-speaking.svg" alt="Codex CLI Hooks" width="64" height="64"></a><br>
   <a href="https://github.com/shanraisshan/codex-cli-hooks"><strong>Codex CLI<br>Hooks</strong></a>
 </td>
-<td align="center" width="140">
-  <a href="https://github.com/shanraisshan/gemini-cli-hooks"><img src="!/gemini-mascot.svg" alt="Gemini CLI Hooks" width="64" height="64"></a><br>
-  <a href="https://github.com/shanraisshan/gemini-cli-hooks"><strong>Gemini CLI<br>Hooks</strong></a>
-</td>
 </tr>
 </table>
 
@@ -249,6 +249,6 @@ Counts reflect the full multi-agent system shipped by each repo; the Gemini CLI 
 
 If you like my work, buy me a doodh patti 🍵 on
 
-<a href="https://buy.polar.sh/polar_cl_R6wjUESl8RiJD0iVaTyStBUV6WNuYvDmLJ0si1XXj4C"><img src="!/tags/polar.svg" alt="Polar" width="40" height="40" align="center"></a> <a href="https://buy.polar.sh/polar_cl_R6wjUESl8RiJD0iVaTyStBUV6WNuYvDmLJ0si1XXj4C"><strong>Polar</strong></a>
+<a href="https://buy.polar.sh/polar_cl_X7sdBf79tkHyDXmbaGG6DET8IFzYD4JMSD1Q81DL0IV"><img src="!/tags/polar.svg" alt="Polar" width="40" height="40" align="center"></a> <a href="https://buy.polar.sh/polar_cl_X7sdBf79tkHyDXmbaGG6DET8IFzYD4JMSD1Q81DL0IV"><strong>Polar</strong></a>
 
 
