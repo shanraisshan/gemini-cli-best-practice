@@ -1,7 +1,7 @@
 # gemini-cli-best-practice
 from vibe coding to agentic engineering — practice makes gemini perfect
 
-![updated with Gemini CLI](https://img.shields.io/badge/updated_with_Gemini_CLI-v0.39.1%20(Apr%2026%2C%202026%205%3A11%20PM%20PKT)-white?style=flat&labelColor=555) <a href="https://github.com/shanraisshan/gemini-cli-best-practice/stargazers"><img src="https://img.shields.io/github/stars/shanraisshan/gemini-cli-best-practice?style=flat&label=%E2%98%85&labelColor=555&color=white" alt="GitHub Stars"></a><br>
+![updated with Gemini CLI](https://img.shields.io/badge/updated_with_Gemini_CLI-v0.40.0%20(Apr%2029%2C%202026%201%3A45%20AM%20PKT)-white?style=flat&labelColor=555) <a href="https://github.com/shanraisshan/gemini-cli-best-practice/stargazers"><img src="https://img.shields.io/github/stars/shanraisshan/gemini-cli-best-practice?style=flat&label=%E2%98%85&labelColor=555&color=white" alt="GitHub Stars"></a><br>
 
 [![Best Practice](!/tags/best-practice.svg)](best-practice/) [![Implemented](!/tags/implemented.svg)](implementation/) [![Orchestration Workflow](!/tags/orchestration-workflow.svg)](orchestration-workflow/orchestration-workflow.md) [![Gemini](!/tags/gemini.svg)](https://github.com/google-gemini/gemini-cli) [![Taylor](!/tags/taylor-mullen.svg)](https://x.com/ntaylormullen) [![Community](!/tags/community.svg)](#-tips-and-tricks-29) ![Click on these badges below to see the actual sources](!/tags/click-badges.svg)<br>
 <img src="!/tags/a.svg" height="14"> = Agents · <img src="!/tags/s.svg" height="14"> = Skills · <img src="!/tags/c.svg" height="14"> = Commands
