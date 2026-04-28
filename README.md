@@ -76,7 +76,7 @@ Gemini asks for your unit, fetches the temperature from Open-Meteo, writes an SV
 
 ## ⚙️ DEVELOPMENT WORKFLOWS
 
-All major workflows converge on the same architectural pattern: **Research → Plan → Execute → Review → Ship**. The ones below ship a dedicated Gemini CLI target — installers create `.gemini/agents/`, `.gemini/commands/`, and/or `.gemini/skills/` so the same workflow runs on Gemini just like it does on Claude Code.
+All major workflows converge on the same architectural pattern: **Research → Plan → Execute → Review → Ship**.
 
 | Name | ★ | Workflow | <img src="!/tags/a.svg" height="14"> | <img src="!/tags/c.svg" height="14"> | <img src="!/tags/s.svg" height="14"> |
 |------|---|----------|---|---|---|
@@ -91,8 +91,6 @@ All major workflows converge on the same architectural pattern: **Research → P
 | [Compound Engineering](https://github.com/EveryInc/compound-engineering-plugin) | 16k | <img src="https://img.shields.io/badge/%2Fce--ideate-ddf4ff" alt="/ce-ideate" align="middle"> → <img src="https://img.shields.io/badge/%2Fce--brainstorm-ddf4ff" alt="/ce-brainstorm" align="middle"> → <img src="https://img.shields.io/badge/%2Fce--plan-ddf4ff" alt="/ce-plan" align="middle"> → <img src="https://img.shields.io/badge/%2Fce--work-ddf4ff" alt="/ce-work" align="middle"> → <img src="https://img.shields.io/badge/%2Fce--code--review-ddf4ff" alt="/ce-code-review" align="middle"> → <img src="https://img.shields.io/badge/%2Fce--compound-ddf4ff" alt="/ce-compound" align="middle"> → <img src="https://img.shields.io/badge/repeat-ddf4ff" alt="repeat" align="middle"> | 50 | 4 | 44 |
 
 > *Note: yellow tags are sub-loops — steps that repeat inside a parent step (e.g. per task, per story, or until a verify condition passes).*
-
-Counts reflect the full multi-agent system shipped by each repo; the Gemini CLI installer / converter emits the equivalent under `.gemini/` (agents → `.gemini/agents/*.md`, commands → `.gemini/commands/*.toml`, skills → `.gemini/skills/<name>/SKILL.md`).
 
 ### Others
 
